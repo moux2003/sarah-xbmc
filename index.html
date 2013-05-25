@@ -1,8 +1,8 @@
 <script type="text/javascript">
     jQuery(document).ready(function () {
-        jQuery("#plugin-menu li a").click(function () {
+        jQuery("#plugin-menu .plugin-nav a").click(function () {
             jQuery("#plugin-menu .content ul").hide();
-            jQuery("#plugin-menu .well ul li").removeClass("active");
+            jQuery("#plugin-menu .plugin-nav ul li").removeClass("active");
             jQuery(this).parent().addClass("active");
             jQuery("#" + jQuery(this).data("toggle")).show();
             return false;
@@ -16,7 +16,7 @@
 
 <div id="plugin-menu" class="row-fluid">
     <!--Navigation-->
-    <div class="span3 well">
+    <div class="span3 well plugin-nav">
         <ul class="nav nav-list">
             <li class="nav-header">Configuration</li>
             <li class="active"><a href="" data-toggle="plugin-config-xbmc">XBMC</a></li>
