@@ -1,0 +1,9 @@
+{
+  "modules" : { 
+    "xbmc":     {
+      "description": "Commande Vocale pour XBMC",
+      "version"    : "1.3",
+      "api_url"    : "http://[FIXME]:[FIXME]/jsonrpc"
+    }
+  }
+}
