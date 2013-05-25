@@ -15,6 +15,30 @@
     </script>
 </head>
 <body>
-<div ng-view></div>
+<div id="container" class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3" id="sidebar">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">S.A.R.A.H.</li>
+                    <li><a href="/home#about">A propos</a></li>
+                    <li><a href="/home#agent">Agent</a></li>
+                    <li><a href="/home#http">Serveur HTTP</a></li>
+                    <li class="nav-header">Modules</li>
+                    <li><a href="/home#plugin1">plugin1</a></li>
+                    <li><a href="/home#plugin2">plugin2</a></li>
+                    <li><a href="/home#...">...</a></li>
+                    <li class="nav-header">PhantomJS</li>
+                    <li class="nav-header">CRON</li>
+                </ul>
+            </div>
+        </div>
+        <!--/span-->
+        <div class="span9 page table-bordered" style="margin-top: 45px; border-color: red;" ng-view>
+        </div>
+        <!--/span-->
+    </div>
+    <!--/row-->
+</div>
 </body>
 </html>
